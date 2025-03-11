@@ -1,5 +1,6 @@
-import { Dog, ShowerHeadIcon as Shower, ScissorsIcon as NailScissors, Sparkles, MessageCircle } from "lucide-react";
+import { Dog, ShowerHeadIcon as Shower, ScissorsIcon as NailScissors, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from 'react-icons/fa';
 
 interface ServicesProps {
   handleWhatsApp: () => void;
@@ -33,7 +34,7 @@ export default function Services({ handleWhatsApp }: ServicesProps) {
               <p className="text-gray-600 text-center mb-4">{service.description}</p>
               <div className="mt-4 flex justify-center">
                 <button onClick={handleWhatsApp} className="text-emerald-500 hover:text-emerald-700 font-medium text-sm flex items-center gap-1">
-                  <MessageCircle className="w-4 h-4" /> Consultar
+                  <FaWhatsapp className="w-4 h-4" /> Consultar
                 </button>
               </div>
             </motion.div>

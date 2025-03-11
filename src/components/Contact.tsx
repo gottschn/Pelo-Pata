@@ -1,5 +1,6 @@
-import { Clock, Phone, Mail, MapPin, MessageCircle } from "lucide-react";
+import { Clock, Phone, Mail, MapPin } from "lucide-react";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from 'react-icons/fa';
 
 interface ContactProps {
   handleWhatsApp: () => void;
@@ -100,7 +101,7 @@ export default function Contact({ handleWhatsApp }: ContactProps) {
                 onClick={handleWhatsApp}
                 className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg flex items-center justify-center gap-2 transition-all hover:scale-105"
               >
-                <MessageCircle className="w-5 h-5" /> WhatsApp
+                <FaWhatsapp className="w-5 h-5" /> WhatsApp
               </button>
             </div>
           </motion.div>

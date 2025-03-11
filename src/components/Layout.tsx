@@ -1,6 +1,7 @@
-import { PawPrintIcon as Paw, MessageCircle } from "lucide-react";
+import { PawPrintIcon as Paw } from "lucide-react";
 import { motion } from "framer-motion";
 import fondoCopado from '../img/fondito.jpg';
+import { FaWhatsapp } from 'react-icons/fa';
 
 interface LayoutProps {
   handleWhatsApp: () => void;
@@ -28,7 +29,7 @@ export default function Hero({ handleWhatsApp, handleNavClick }: LayoutProps) {
         <motion.p className="text-xl md:text-2xl mb-12 text-gray-200" variants={fadeInUp}>Donde el cuidado y el estilo se encuentran para hacer brillar a tu mejor amigo</motion.p>
         <motion.div className="flex flex-col sm:flex-row gap-4 justify-center" variants={fadeInUp}>
           <motion.button onClick={handleWhatsApp} className="bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2 group" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <MessageCircle className="w-6 h-6 group-hover:animate-bounce" /> Reserva tu cita ahora
+            <FaWhatsapp className="w-6 h-6 group-hover:animate-bounce" /> Reserva tu cita ahora
           </motion.button>
           <motion.button onClick={() => handleNavClick("servicios")} className="bg-white/20 hover:bg-white/30 backdrop-blur-sm text-white font-bold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105" whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             Conoce nuestros servicios
