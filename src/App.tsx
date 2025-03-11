@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { MessageCircle, ArrowUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Layout from "./components/Layout";
@@ -11,7 +11,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
+import { FaWhatsapp } from 'react-icons/fa';
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
@@ -65,7 +65,7 @@ function App() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1 }}
       >
-        <MessageCircle className="w-6 h-6" />
+        <FaWhatsapp className="w-6 h-6" />
       </motion.button>
 
       <AnimatePresence>
